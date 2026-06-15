@@ -1,0 +1,14 @@
+{
+  "$schema": "./group_mappings.schema.json",
+  "mappings": [
+    {
+      "oktaGroupId": "00gxxxxxxxxxxxxxxx",
+      "oktaGroupName": "IT-Admins",
+      "m365GroupId": "",
+      "m365GroupName": "IT-Admins",
+      "targetType": "both",
+      "autoCreate": true,
+      "notes": "IT administrators group"
+    }
+  ]
+}

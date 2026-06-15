@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["oktaGroupId", "m365GroupName", "targetType"],
+        "properties": {
+          "oktaGroupId":    { "type": "string" },
+          "oktaGroupName":  { "type": "string" },
+          "m365GroupId":    { "type": "string" },
+          "m365GroupName":  { "type": "string" },
+          "targetType":     { "type": "string", "enum": ["m365", "distribution", "both"] },
+          "autoCreate":     { "type": "boolean" },
+          "notes":          { "type": "string" }
+        }
+      }
+    }
+  }
+}
