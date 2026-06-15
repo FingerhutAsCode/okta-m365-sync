@@ -1,13 +1,14 @@
 # Azure Setup
 
 ## 1. Service Principal (GitHub Actions deployment)
+Via Azure Cloud Shell
 ```bash
-az ad sp create-for-rbac --name "github-okta-m365-sync" \
+az ad sp create-for-rbac --name "okta-m365-sync" \
   --role contributor \
   --scopes /subscriptions/<sub-id>/resourceGroups/<rg-name> \
   --sdk-auth
 ```
-Paste JSON output as `AZURE_CREDENTIALS` GitHub secret.
+Save a copy of the output as you will need to paste the JSON output as `AZURE_CREDENTIALS` GitHub secret.
 
 ## 2. App Registration (Graph API access)
 Azure Portal → Entra ID → App Registrations → New Registration
