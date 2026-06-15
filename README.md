@@ -6,6 +6,10 @@ A lightweight, open-source solution for syncing Okta group membership to Microso
 
 Okta's native Group Push only syncs to Entra ID security groups. Organizations that need M365 Groups or Exchange Distribution Lists kept in sync with Okta groups have no simple open-source solution — this fills that gap.
 
+## Assumptions
+
+Knowledge of Azure, Okta, and M365 Administration
+
 ## How It Works
 
 1. Okta fires an Event Hook on group membership changes
