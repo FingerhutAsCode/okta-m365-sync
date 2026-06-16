@@ -1,4 +1,4 @@
-name: Deploy Okta → M365 Sync
+name: Deploy Okta → M365 Sync [DEV]
 
 on:
   push:
