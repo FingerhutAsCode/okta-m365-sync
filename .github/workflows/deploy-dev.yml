@@ -2,9 +2,9 @@ name: Deploy Okta → M365 Sync
 
 on:
   push:
-    branches: [main]
+    branches: [dev]
   pull_request:
-    branches: [main]
+    branches: [dev]
 
 jobs:
   test:
@@ -22,7 +22,7 @@ jobs:
     name: Deploy Infrastructure
     runs-on: ubuntu-latest
     needs: test
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/dev'
     environment: dev
     steps:
       - uses: actions/checkout@v4
